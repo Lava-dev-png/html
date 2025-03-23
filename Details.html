@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+<body>
+    <fieldset>
+    <legend>Details</legend>
+    
+    <form>
+        <label>Enter the Name of the Candidate</label>
+        <br/>
+        <input type="name" pattern="[aA-zZ]{1,20}" name="name" placeholder="enter the name of the candidate" title="enter the valid name" >
+        <button type="submit">Submit</button>
+        <br/>
+        <label>enter the password</label>
+        <br/>
+        <label>Gender</label>
+        <br>
+        <input type="radio" name="gender" >Male
+        <input type="radio" name="gender" >female
+        <br>
+        <input type="password" name="password" placeholder="enter the correct password">
+        <br/>
+        <label>Enter the date of birth</label>
+        <br/>
+        <input type="date">
+        <br/>
+        <label>Experience</label>
+        <br/>
+        <input type="number" name="number" min="3" max="15" placeholder="select">
+        <br/>
+        <label>Branch</label>
+        <br/>
+        <input type="checkbox" name="webdevelopment">Web Development
+        <input type="checkbox" name="ArtificialIntelegence">Artificial Intelegence
+        <br>
+        <select name="branch">
+            <option value="Select the location">-----select the location-----</option>
+            <option value="Bengaluru">bengaluru</option>
+            <option value="Hyderabad">Hyderabad</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Mumbai">Mumbai</option>
+            <option value="Pune">Pune</option>
+        </select>
+        <br>
+        <label>Enter your location</label>
+        <br>
+        <input type="text" list="loction">
+
+        <datalist id="loction">
+            <option value="bengaluru">bengaluru</option>
+            <option value="bombay">bombay</option>
+            <option value="chennai">chennai</option>
+            <option value="hyderabad">hyderabad</option>
+        </datalist>
+        <br/>
+        <label>Upload the resume</label>
+        <br/>
+        <input type="file" name="file" required>
+        <br/>
+        <textarea name="message" rows="10" cols="30" placeholder="enter the message"></textarea>
+
+        <br/>
+        <button type="submit">submit</button>
+        <br/>
+        <label>Age</label>
+        <br/>
+        <input type="range" name="age" min="18" max="45">
+        <br>
+        
+    </form>
+</fieldset>
+</body>
+</html>
